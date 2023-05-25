@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['Mulish', 'sans-serif'],
+            mono: ['Rokkitt', 'monospace'],
+          },
+        },
+      };
+    </script>
+    <title>Login Modal</title>
+  </head>
+  <body>
+    <!-- Global Container -->
+    <div class="flex items-center justify-center min-h-screen bg-rose-50">
+      <div
+        class="relative flex flex-col md:flex-row m-6 space-y-120 md:m-0 md:space-y-0 bg-white shadow-2xl rounded-2xl"
+      >
+        <!-- Left Side -->
+        <div class="p-6 md:p-20">
+          <h2 class="font-mono mb-5 text-4xl font-bold">Log In</h2>
+          <p class="max-w-sm mb-12 font-sans font-light text-gray-600">
+            Log into your account to download your picture, images, videos or
+            any type of files.
+          </p>
+          <input
+            type="text"
+            class="w-full p-6 border border-gray-300 rounded-md placeholder:font-sans placeholder:font-light"
+            placeholder="Enter your Email address"
+          />
+
+          <!-- Middle Content -->
+          <div
+            class="flex flex-col items-center justify-between mt-6 space-y-6 md:flex-row md:space-y-0"
+          >
+            <div class="font-thin text-cyan-700">Forgot Password</div>
+            <button
+              class="w-full md:w-auto flex justify-center items-center p-6 space-x-4 fonts-sans font-bold text-white rounded-md shadow-lg px-9 bg-cyan-700 shadow-cyan-100 hover:bg-opacity-90 hover:shadow-lg border transition hover:-translate-y-0.5 duration-150"
+            >
+              <span>Next</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 25 25"
+                class="w-6"
+              >
+                <path
+                  style="fill: #ffffff"
+                  d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+                  data-name="Right"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Border -->
+          <div class="mt-12 border-b border-b-gray-300"></div>
+
+          <!-- Bottom Container -->
+          <div class="py-6 text-sm font-thin text-center text-gray-400">
+            Or Log In with
+          </div>
+          <div
+            class="flex flex-col md:flex-row space-x-0 space-y-6 md:space-x-4 md:space-y-0"
+          >
+            <button
+              class="flex items-center justify-center py-2 md:px-2 space-x-3 border border-gray-300 rounded shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition duration-150 md:w-1/2"
+            >
+              <img src="images/facebook.png" alt="" class="w-9" />
+              <span class="font-thin">Facebook</span>
+            </button>
+            <button
+              class="flex items-center justify-center py-2 md:px-2 space-x-3 border border-gray-300 rounded shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition duration-150 md:w-1/2"
+            >
+              <img src="images/google.png" alt="" class="w-9" />
+              <span class="font-thin">Google</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <img src="images/image.jpg" alt="" class="w-[430px] hidden md:block" />
+
+        <!-- Close Button -->
+        <div class="group absolute top-5 right-5 flex items-center justify-center rounded-full bg-gray-200 w-10 h-10 md:bg-white border-4 border-gray-200 hover:cursor-pointer hover:-translate-y-0.5 transition duration-150">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            viewBox="0 0 50 50"
+            class="w-10 h-10 group-hover:text-gray-600 text-black"
+          >
+            <path
+              d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 37.690466 12.309534 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z M 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 13.390466 46 4 36.609534 4 25 C 4 13.390466 13.390466 4 25 4 z M 32.990234 15.986328 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.990234 15.986328 z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
